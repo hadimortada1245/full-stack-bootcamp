@@ -67,3 +67,9 @@ console.log(122>=12);
 console.log(12<12);
 console.log(12<13);
 console.log(12<=126);
+let result0=5+3*2;//11
+let result1=10 / 2 + 3;//8 It will starts by the division 10 over 2 because there is no ()
+let result2=10 / (2 + 3);//2 It will starts by the adding 2+3 because there is a ()
+console.log(result0);
+console.log(result1);
+console.log(result2);
