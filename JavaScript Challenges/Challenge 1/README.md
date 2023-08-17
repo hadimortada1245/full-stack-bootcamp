@@ -74,7 +74,7 @@
 - Declare 2 string variables of your choice.
 - Declare a new variable `result`.
 - Concatenate the values of the first two variables and assign the result to the `result` variable.
-- Commit: "Challenge 1 - Done with Step 6"
+- Commit: 
 
 ## Exploring Operators
 
