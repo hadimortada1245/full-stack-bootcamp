@@ -49,8 +49,7 @@
   - `undefined`
 - Declare 6 variables and assign them different data types.
 - Log each variable along with its data type.
-- Commit: "Challenge 1 - Done with Step 4"
-
+- Commit: 
 ### Step 5
 
 - Declare a variable `myText` and assign a string value to it.
