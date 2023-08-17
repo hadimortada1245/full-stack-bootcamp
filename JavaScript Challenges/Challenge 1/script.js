@@ -48,3 +48,6 @@ console.log(backtick);
 console.log(singleQuote);
 console.log(doubleQuote );
 // if you want to dispaly the value of counter you can do it only by using these `` 
+let str1="Hello";
+let str2=" Js";
+let result=str1+str2;
