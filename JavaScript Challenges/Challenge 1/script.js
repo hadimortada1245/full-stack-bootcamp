@@ -30,3 +30,21 @@ console.log(isVAlid+" is a "+typeof(isVAlid));
 console.log(tax+" is a "+typeof(tax));
 console.log(ch+" is a "+typeof(ch));
 console.log(array+" is a "+typeof(array));
+let myText="Hello this is Javascript";
+let first="Here we go";
+let second='Here we go';
+let third=`Here we go`;
+// interpolation is how to put a value into a string
+let str="Hello "+name+ "DO YOU LOVE JS";
+let secondway=`Hello ${name} WE KNOW THAT YOU LOVE JS`;
+const counter = 3;
+const backtick = `This is my text using backticks ${counter} times`;
+const singleQuote =
+  'This is my text using single quotations ${counter} times';
+const doubleQuote =
+  'This is my text using double quotations ${counter} times';
+const tryThisAlso = `This is my new version, it’s the ${2 + 3}th version`;
+console.log(backtick);
+console.log(singleQuote);
+console.log(doubleQuote );
+// if you want to dispaly the value of counter you can do it only by using these `` 
