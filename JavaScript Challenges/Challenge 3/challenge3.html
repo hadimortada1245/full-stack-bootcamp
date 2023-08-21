@@ -21,7 +21,7 @@ function compute(num1,num2,operation){
 console.log(compute(1,2,"add"));
 
 const squareNumber = (number) => {
-    let globalVar=0;
+   // let globalVar=0;
   
     return number * number;
   
@@ -30,6 +30,32 @@ const squareNumber = (number) => {
 
 console.log(squareNumber(2));
 
-console.log(globalVar);
+//console.log(globalVar);
+for(let i=1;i<=10;i++)console.log(i);
+let i=10;
+while(i>0)console.log(i--);
+i=1;
+do{
+    if(i%2==0)console.log(i);
+    i++;
+}while(i<=10);
+let fruits=["banana","apple","orange"];
+for (let iterator of fruits) {
+    if(iterator.length>=5)console.log(iterator);
+}
+function processArray(tab,write){
+    write=(array)=>{
+        for(let i=0;i<tab.length;i++)if(tab[i].length>=5)console.log(tab[i]);
+    }
+    write(tab);
+}processArray(fruits);
+function mutliplier(num1){
+    return mutliplie=(num2)=>{
+        return num1*num2;
+    }
+}
+let a=mutliplier(2);
+let b=a(3);
+
 
 </script>
