@@ -26,5 +26,29 @@
   console.log(Name);
   console.log(Nationality);
   console.log(L);
+  let personalInfo={
+        name:"Hadi Mortada",
+        age:22,
+        height:173,
+        location:"Bekaa",
+        nationality:"Lebanese",
+        contactInfo:{
+            phone_number:71039078
+        }
+    } 
+  //  console.log(personalInfo.contactInfo.phone_number);
+  let [n1,n2,...restOfNumbers]=fiveNumbers;
+//console.log(restOfNumbers); 
+let person1={
+        name:"Hadi Mortada",
+    }
+let person2={
+    name:"mhmd"
+}  
+let p={
+    ...person1,
+    ...person2
+}  
 
+console.log(p);
 </script>
