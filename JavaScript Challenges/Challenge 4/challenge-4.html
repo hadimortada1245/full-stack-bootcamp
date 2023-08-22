@@ -9,11 +9,22 @@
     } 
     let nextThreeNumbers=[1,16,7];
     let allNumbers=[...fiveNumbers,...nextThreeNumbers];
-    console.log(allNumbers);
+   // console.log(allNumbers);
     let additionalInfo={
         hoby:"Cycling",
         education:"Computer science"
     }
     let fullInfo={...person,...additionalInfo};
-    console.log(fullInfo.education);
+    //console.log(fullInfo.education);
+    let firstNum , secondNum,thirdNum;
+    // [firstNum , secondNum,thirdNum]=[fiveNumbers.splice(0,3)][2,3,5]
+ //console.log(firstNum);//[2,3,5]
+ [firstNum , secondNum,thirdNum]=fiveNumbers;
+ //console.log(firstNum);
+ let Name, L, Nationality;
+  [ Name, L, Nationality]=[person.name,person.location,person.nationality];
+  console.log(Name);
+  console.log(Nationality);
+  console.log(L);
+
 </script>
