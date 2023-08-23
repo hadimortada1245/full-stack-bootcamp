@@ -1,0 +1,24 @@
+let menu=document.querySelector(".menu");
+let headerElement=document.querySelector("header");
+let footerElement=document.querySelector("footer");
+let menuElements=menu.children;
+let headerElements=headerElement.children;
+let footerElements=footerElement.children;
+console.log(menuElements);
+console.log(headerElements);
+console.log(footerElements);
+ let newdiv=document.createElement("div");
+newdiv.className="container";
+let newP=document.createElement("p");
+newP.innerHTML="Hello, World!";
+newdiv.appendChild(newP);
+console.log(newdiv);
+newdiv.style.color="blue";
+newP.style.color="white";
+newP.style.fontSize="24px";
+newP.style.fontFamily="Helvetica";
+newP.style.border="1px solid red";
+let headings=document.querySelectorAll("h1,h3");
+headings.forEach(heading => {
+    heading.style.fontStyle = 'italic';
+});
