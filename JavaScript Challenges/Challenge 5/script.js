@@ -56,3 +56,28 @@ let body= document.querySelector("body");
 body.appendChild(name);
 body.appendChild(mail);
 body.appendChild(s);
+let notOriginal=document.createElement("div");
+notOriginal.innerHTML=original.innerHTML;
+
+body.appendChild(notOriginal);
+let h=document.querySelector("h1");
+h.innerHTML="cloned";
+notOriginal.style.display="none";
+let showus=document.getElementById("clone-btn");
+showus.addEventListener('click',function(){
+    if(notOriginal.style.display==="none")
+    notOriginal.style.display="block";
+    else
+    notOriginal.style.display="none"
+});
+let removeHeader=document.createElement("button");
+removeHeader.addEventListener('click',function(){
+    body.removeChild(headerElement);
+});
+body.appendChild(removeHeader);
+function inser(){
+    let newel=document.createElement("p");
+    newel.innerHTML="new element";
+    footerElement.parentElement.insertBefore(newel, footerElement);
+}
+inser();
