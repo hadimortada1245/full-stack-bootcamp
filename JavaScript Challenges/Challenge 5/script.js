@@ -22,3 +22,37 @@ let headings=document.querySelectorAll("h1,h3");
 headings.forEach(heading => {
     heading.style.fontStyle = 'italic';
 });
+let btn=document.createElement("button");
+btn.addEventListener("mouseover",function(){
+btn.style.backgroundColor="green";
+});
+btn.addEventListener("mouseout",function(){
+    btn.style.backgroundColor="gray";
+    });
+let original=document.getElementById("original");
+let buttons=document.querySelectorAll("button");
+buttons.forEach(butn=>{
+    butn.addEventListener('click',function(){
+        console.log(this.innerHTML);
+    });
+});
+let f=document.createElement("form");
+let name=document.createElement("input");
+name.type="txt";
+name.id="name";
+f.appendChild(name);
+let mail=document.createElement("input");
+mail.type="email";
+mail.id="email";
+f.appendChild(mail);
+let s=document.createElement("button");
+s.type="submit";
+s.id="sub";
+s.addEventListener('click',function(){
+    console.log(name.value,mail.value)
+});
+f.appendChild(s);
+let body= document.querySelector("body");
+body.appendChild(name);
+body.appendChild(mail);
+body.appendChild(s);
