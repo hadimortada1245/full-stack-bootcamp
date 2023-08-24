@@ -33,3 +33,47 @@ document.addEventListener("keydown",function(event){
                 newH1.style.display="none";
       else if(event.key === " ")newH1.style.fontSize="27px";                 
 });
+let ourform=document.createElement("form");
+let fullName=document.createElement("input");
+fullName.type="text";
+let mail=document.createElement("input");
+mail.type="email";
+let pass=document.createElement("input");
+pass.type="password";
+let confirmPass=document.createElement("input");
+confirmPass.type="password";
+let sub=document.createElement("input");
+sub.type="submit";
+ourform.appendChild(fullName);
+ourform.appendChild(mail);
+ourform.appendChild(pass);
+ourform.appendChild(confirmPass);
+ourform.appendChild(sub);
+body.appendChild(ourform);
+ourform.setAttribute("submit",function(event){
+    event.preventDefault();
+    var pattern0 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(! pattern0.test(mail.value)){
+        alert("Please enter a valid email address.");
+        return false;
+    }
+    var pattern1=/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+    if(! pattern1.test(pass.value)||!pattern1.test(confirmPass.value)){
+        alert("Invalid pass");
+        return false;
+    } 
+    alert("The form is submitted successfully");
+    return true;
+});
+let inputs=document.querySelectorAll("input");
+inputs.forEach(element => {
+    element.addEventListener("focus",function(){
+        element.style.backgroundColor = 'lightblue';
+
+    });
+    element.addEventListener("blur",function(){
+        element.style.backgroundColor="white";
+    });
+});
+
+
