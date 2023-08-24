@@ -26,3 +26,41 @@ function updateClock() {
   }).then(function(){
     alert("Chained message!");
   });
+  function simulateNetworkRequest() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const randomValue = Math.random();
+        if (randomValue < 0.5) {
+          resolve("Data fetched successfully!");
+        } else {
+          reject("Network Error!");
+        }
+      }, 3000);
+    });
+  }
+  async function fetchData() {
+    try {
+      const result = await simulateNetworkRequest();
+      console.log(result); 
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  fetchData();
+  async function fetchSinglePost() {
+    try {
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error('An error occurred:', error.message);
+    }
+  }
+  fetchSinglePost();
+  
